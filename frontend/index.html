@@ -156,3 +156,133 @@
     <script src="../public/scripts/main.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brice Technologies</title>
+
+    <!-- Professional fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f5f7fa;
+            color: #1a1a1a;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0a0f2c, #1c2a5e);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-btn {
+            background: #4a7cff;
+            padding: 14px 32px;
+            border-radius: 8px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        .cta-btn:hover {
+            background: #335bd6;
+        }
+
+        /* FEATURES */
+        .features {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .feature-box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a0f2c;
+            color: #d0d4e4;
+            text-align: center;
+            padding: 30px 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Brice Technologies</h1>
+        <p>Professional solutions engineered with precision, reliability, and modern design.  
+           Built for performance. Designed for clarity.</p>
+        <a href="#features" class="cta-btn">Explore Solutions</a>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+        <div class="feature-box">
+            <h3>Backend Reliability</h3>
+            <p>Our backend systems are validated, optimized, and built for real‑world workloads.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Modern Frontend</h3>
+            <p>Clean UI, responsive layouts, and fast-loading interfaces for every device.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Secure Architecture</h3>
+            <p>Security-first design ensures your data and operations remain protected.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 Brice Technologies — All Rights Reserved
+    </footer>
+
+</body>
+</html>
