@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure - BriceTech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="configure.css">
+</head>
+
+<body>
+    <header>BriceTech - Configuration</header>
+    <div class="glow-line"></div>
+
+    <div class="dark-toggle" onclick="toggleDarkMode()">Dark Mode</div>
+
+    <div class="container">
+        <div class="configure-wrapper">
+            <!-- Search Section -->
+            <div class="search-section">
+                <h2>Search Systems</h2>
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-bar" 
+                        placeholder="Search for systems..."
+                    >
+                    <button id="searchBtn" class="search-btn">Search</button>
+                </div>
+                
+                <!-- Search Results -->
+                <div id="resultsContainer" class="results-container hidden">
+                    <h3>Search Results</h3>
+                    <div id="resultsList" class="results-list"></div>
+                </div>
+            </div>
+
+            <!-- Filters Section -->
+            <div class="filters-section">
+                <h2>Configure Your System</h2>
+                
+                <div class="filters-grid">
+                    <!-- CPU Filter -->
+                    <div class="filter-group">
+                        <label for="cpuFilter">CPU:</label>
+                        <select id="cpuFilter" class="filter-select">
+                            <option value="">-- Select CPU --</option>
+                        </select>
+                    </div>
+
+                    <!-- RAM Filter -->
+                    <div class="filter-group">
+                        <label for="ramFilter">RAM:</label>
+                        <select id="ramFilter" class="filter-select">
+                            <option value="">-- Select RAM --</option>
+                        </select>
+                    </div>
+
+                    <!-- Storage Filter -->
+                    <div class="filter-group">
+                        <label for="storageFilter">Storage:</label>
+                        <select id="storageFilter" class="filter-select">
+                            <option value="">-- Select Storage --</option>
+                        </select>
+                    </div>
+
+                    <!-- GPU Filter -->
+                    <div class="filter-group">
+                        <label for="gpuFilter">GPU:</label>
+                        <select id="gpuFilter" class="filter-select">
+                            <option value="">-- Select GPU --</option>
+                        </select>
+                    </div>
+
+                    <!-- Platform Filter -->
+                    <div class="filter-group">
+                        <label for="platformFilter">Platform:</label>
+                        <select id="platformFilter" class="filter-select">
+                            <option value="">-- Select Platform --</option>
+                        </select>
+                    </div>
+
+                    <!-- Operating System Filter -->
+                    <div class="filter-group">
+                        <label for="osFilter">Operating System:</label>
+                        <select id="osFilter" class="filter-select">
+                            <option value="">-- Select OS --</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>© 2026 BriceTech — All Rights Reserved</footer>
+
+    <script src="main.js"></script>
+    <script src="configure.js"></script>
+</body>
+</html>
