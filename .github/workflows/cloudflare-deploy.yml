@@ -24,6 +24,7 @@ jobs:
 
           for path in CNAME index.html configure.html style.css configure.css main.js configure.js frontend public; do
             if [ -e "$path" ]; then
+              mkdir -p "$DEPLOY_DIR/$(dirname "$path")"
               cp -R "$path" "$DEPLOY_DIR/$path"
             fi
           done
