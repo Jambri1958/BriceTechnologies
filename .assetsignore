@@ -1,0 +1,12 @@
+.git
+.github
+.gitignore
+.assetsignore
+wrangler.jsonc
+CNAME
+README.md
+*.md
+*.py
+frontend
+public
+node_modules
